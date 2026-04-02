@@ -29,7 +29,7 @@
     $errors[]="The Email or Password doesn't correct";
     $_SESSION['login_errors']=$errors;
     $_SESSION['old_email']=$email;
-    header('location: /login/views/login.php');
+    header('location: ../views/login.php');
     exit;
  }
  ?>

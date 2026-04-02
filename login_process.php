@@ -16,13 +16,13 @@
         $_SESSION['user_id']=$result['id'];
         $_SESSION['user_name']=$result['name'];
         $_SESSION['user_email']=$result['email'];
-        header('location: /login/index.php');
+        header('location: /../index.php');
         exit;
     }else {
             $errors[]="The Email or Password doesn't correct";
             $_SESSION['login_errors']=$errors;
             $_SESSION['old_email']=$email;
-            header('location: /login/views/login.php');
+            header('location: /../views/login.php');
             exit;
         }
  }else {

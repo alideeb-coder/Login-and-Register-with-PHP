@@ -25,6 +25,9 @@ if(empty($errors)){
         exit;
     }else {
         $errors[]="Failed ! Your connection is bad !";
+        $errors[]="This Email Already Used";
+        $_SESSION['errors']=$errors;
+        $_SESSION['old_input']=['name'=>$name,'email'=>$email];
         header('location: ../views/register.php');
         exit;
     }

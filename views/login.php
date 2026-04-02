@@ -17,7 +17,7 @@ session_start();
     </div>
 <?php endif; ?>
 
-<form action="/login/login_process.php" method="POST">
+<form action="/../login_process.php" method="POST">
     <div class="form-group">
         <label >Email</label>
         <input type="email" name="email" value="<?php echo htmlspecialchars($old??''); ?>"required>
@@ -29,7 +29,7 @@ session_start();
     <button type="submit">Login</button>
 </form>
 <div class="link">
-    you don't have an account ? <a href="/login/views/register.php"> Create a new account</a>
+    you don't have an account ? <a href="/../views/register.php"> Create a new account</a>
 </div>
  
  <?php  include __DIR__."/layout/footer.php"; ?> 

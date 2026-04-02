@@ -21,11 +21,11 @@ if(empty($errors)){
         $_SESSION['user_id']=$user['id'];
         $_SESSION['user_name']=$user['name'];
         $_SESSION['user_email']=$user['email'];
-        header("location:/../index.php");
+        header("location:../index.php");
         exit;
     }else {
         $errors[]="Failed ! Your connection is bad !";
-        header('location: /../views/register.php');
+        header('location: ../views/register.php');
         exit;
     }
 }
@@ -33,7 +33,7 @@ else {
     $errors[]="This Email Already Used";
     $_SESSION['errors']=$errors;
     $_SESSION['old_input']=['name'=>$name,'email'=>$email];
-    header('location: /../views/register.php');
+    header('location: ../views/register.php');
             exit;
 }
 

@@ -19,7 +19,8 @@ class Database{
                 $this->password,
                 [
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                    PDO::MYSQL_ATTR_SSL_CA => true 
+                    PDO::MYSQL_ATTR_SSL_CA => true ,
+                    PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => false 
                 ]
             );
         $this->conn->exec("set names utf8");

@@ -5,6 +5,8 @@ session_start();
  if(isset($_SESSION['old_email']))unset($_SESSION['old_email']);
  if(isset($_SESSION['login_error']))unset($_SESSION['login_error']);
  $pageTitle='Login';
+?>
+<?php
  include __DIR__."/layout/header.php";
  ?>
 <h2>Login Page</h2>

@@ -21,7 +21,7 @@ if(isset($_SESSION['old_input']))unset($_SESSION['old_input']);
     </div>
 <?php endif; ?>
 
-<form action="/login/register_process.php" method="POST">
+<form action="/../register_process.php" method="POST">
     <div class="form-group">
         <label >Name</label>
         <input type="text" name="name"  require value="<?php echo htmlspecialchars($old['name']??''); ?>">
@@ -39,7 +39,7 @@ if(isset($_SESSION['old_input']))unset($_SESSION['old_input']);
 </form>
 
 <div class="link">
-    You alraedy have an account <a href="/login/views/login.php">Login </a>
+    You alraedy have an account <a href="/../views/login.php">Login </a>
 </div>
 
 

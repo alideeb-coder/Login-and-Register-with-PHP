@@ -3,12 +3,12 @@
 use function Laravel\Prompts\error;
 
 $pageTitle="Register";
-include __DIR__."/layout/header.php";
 session_start();
 $errors=$_SESSION["errors"]??[];
 $old=$_SESSION["old_input"]??[];
 if(isset($_SESSION["errors"]))unset($_SESSION['errors']);
 if(isset($_SESSION['old_input']))unset($_SESSION['old_input']);
+include __DIR__."/layout/header.php";
 ?>
 
 

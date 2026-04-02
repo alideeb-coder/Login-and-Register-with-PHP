@@ -6,7 +6,6 @@ class Database{
     private $password="";
     private $conn=null;
     public function __construct() {
-        // استخدام getenv() لقراءة القيم التي وضعناها في Render
         $this->host     = getenv('DB_HOST');
         $this->db_name  = getenv('DB_NAME');
         $this->username = getenv('DB_USER');

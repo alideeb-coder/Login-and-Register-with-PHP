@@ -1,4 +1,4 @@
- <?php
+<?php
 session_start();
  $errors=$_SESSION['login_errors']??[];
  $old=$_SESSION['old_email']??'';

@@ -7,7 +7,9 @@ class User {
     {
         $db=new Database;
         $this->conn=$db->getConnection();
-        if($this->conn===null)exit;
+        if($this->conn===null){
+            header("location: ../index.php");exit;
+        }
     }
     public function FindByEmail($email){
         $query="SELECT * FROM {$this->table} WHERE email=:email LIMIT 1 ";

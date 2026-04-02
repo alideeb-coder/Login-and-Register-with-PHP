@@ -1,8 +1,8 @@
 <?php 
 class Database{
-    private $host="localhost";
+    private $host="gateway01.us-east-1.prod.aws.tidbcloud.com";
     private $db_name="user_platform";
-    private $username="root";
+    private $username="3qXuqz7eF29TbWY.root";
     private $password="";
     private $conn=null;
     public function getConnection(){

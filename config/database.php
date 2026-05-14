@@ -7,10 +7,10 @@ class Database {
     private $conn = null;
 
     public function __construct() {
-        $this->host     = getenv('DB_HOST') ?: "gateway01.us-east-1.prod.aws.tidbcloud.com";
-        $this->db_name  = getenv('DB_NAME') ?: "user_platform";
-        $this->username = getenv('DB_USER') ?: "3qXuqz7eF29TbWY.root";
-        $this->password = getenv('DB_PASS') ?: ""; 
+        $this->host     = getenv('DB_HOST') ;
+        $this->db_name  = getenv('DB_NAME') ;
+        $this->username = getenv('DB_USER');
+        $this->password = getenv('DB_PASS') ;
     }
 
     public function getConnection() {
